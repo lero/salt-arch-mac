@@ -5,6 +5,7 @@ gms:
     - home: /home/gms
     - groups:
       - wheel
+      - libvirt
 
 /home/gms/.bash_profile:
   file.managed:
