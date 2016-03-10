@@ -136,7 +136,6 @@ gms:
     - user: gms
     - group: gms
     - mode: 750
-    - makedirs: True
     - require:
         - user: gms
 
@@ -145,7 +144,6 @@ gms:
     - user: gms
     - group: gms
     - mode: 750
-    - makedirs: True
     - require:
         - user: gms
 
@@ -154,7 +152,6 @@ gms:
     - user: gms
     - group: gms
     - mode: 750
-    - makedirs: True
     - require:
         - user: gms
 
@@ -163,6 +160,5 @@ gms:
     - user: gms
     - group: gms
     - mode: 750
-    - makedirs: True
     - require:
         - user: gms
