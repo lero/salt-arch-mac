@@ -17,6 +17,7 @@ packages:
       - figlet
       - firefox
       - git
+      - go
       - htop
       - i3blocks
       - i3lock
@@ -28,6 +29,7 @@ packages:
       - iw
       - lib32-mesa-libgl
       - libva-intel-driver
+      - mercurial
       - mplayer
       - mpv
       - mtr

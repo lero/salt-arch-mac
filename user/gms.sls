@@ -121,3 +121,48 @@ gms:
     - file_mode: 750
     - require:
         - user: gms
+
+/home/gms/devel/go:
+  file.directory:
+    - user: gms
+    - group: gms
+    - mode: 750
+    - makedirs: True
+    - require:
+        - user: gms
+
+/home/gms/pictures:
+  file.directory:
+    - user: gms
+    - group: gms
+    - mode: 750
+    - makedirs: True
+    - require:
+        - user: gms
+
+/home/gms/downloads:
+  file.directory:
+    - user: gms
+    - group: gms
+    - mode: 750
+    - makedirs: True
+    - require:
+        - user: gms
+
+/home/gms/documents:
+  file.directory:
+    - user: gms
+    - group: gms
+    - mode: 750
+    - makedirs: True
+    - require:
+        - user: gms
+
+/home/gms/temp:
+  file.directory:
+    - user: gms
+    - group: gms
+    - mode: 750
+    - makedirs: True
+    - require:
+        - user: gms

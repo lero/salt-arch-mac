@@ -21,13 +21,6 @@ libvirtd:
     - require:
         - pkg: libvirt
 
-firewalld:
-  pkg.installed: []
-  service.running:
-    - enable: True
-    - require:
-        - pkg: firewalld
-
 tlp:
   pkg.installed: []
   service.running:
