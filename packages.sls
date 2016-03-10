@@ -3,6 +3,8 @@ packages:
     - pkgs:
       - acpi
       - alsa-utils
+      - android-tools
+      - android-udev
       - ansible
       - bind-tools
       - bridge-utils

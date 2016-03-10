@@ -6,6 +6,7 @@ gms:
     - groups:
       - wheel
       - libvirt
+      - adbusers
 
 /home/gms/.bash_profile:
   file.managed:
