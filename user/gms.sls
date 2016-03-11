@@ -142,6 +142,14 @@ gms:
     - require:
         - user: gms
 
+/home/gms/.ssh:
+  file.directory:
+    - user: gms
+    - group: gms
+    - mode: 700
+    - require:
+        - user: gms
+
 /home/gms/downloads:
   file.directory:
     - user: gms
