@@ -125,6 +125,16 @@ vim-colors-solarized:
             - file: /home/gms/.vim/bundle
             - pkg: packages
 
+salt-vim:
+    git.latest:
+        - name: https://github.com/saltstack/salt-vim.git
+        - target: /home/gms/.vim/bundle/salt-vim
+        - user: gms
+        - require:
+            - user: gms
+            - file: /home/gms/.vim/bundle
+            - pkg: packages
+
 # aur packages:
 # dropbox-cli
 # fetch-git
