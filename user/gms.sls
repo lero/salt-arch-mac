@@ -7,6 +7,8 @@ gms:
       - wheel
       - libvirt
       - adbusers
+    - require:
+        - pkg: packages
 
 /home/gms/.bash_profile:
   file.managed:
@@ -157,6 +159,23 @@ gms:
         - user: gms
 
 /home/gms/temp:
+  file.directory:
+    - user: gms
+    - group: gms
+    - mode: 750
+    - require:
+        - user: gms
+
+/home/gms/.vim/autoload:
+  file.directory:
+    - user: gms
+    - group: gms
+    - makedirs: True
+    - mode: 750
+    - require:
+        - user: gms
+
+/home/gms/.vim/bundle:
   file.directory:
     - user: gms
     - group: gms

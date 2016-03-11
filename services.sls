@@ -1,35 +1,30 @@
 NetworkManager:
-  pkg.installed:
-    - name: networkmanager
   service.running:
     - enable: True
+    - restart: True
+    - watch:
+        - file: /etc/NetworkManager/NetworkManager.conf
     - require:
-        - pkg: networkmanager
+        - pkg: packages
+        - file: /etc/NetworkManager/NetworkManager.conf
 
 bitlbee:
-  pkg.installed: []
   service.running:
     - enable: True
     - require:
-        - pkg: bitlbee
+        - pkg: packages
 
 libvirtd:
-  pkg.installed:
-    - name: libvirt
   service.running:
     - enable: True
     - require:
-        - pkg: libvirt
+        - pkg: packages
 
 tlp:
-  pkg.installed: []
   service.running:
     - enable: True
     - require:
-        - pkg: tlp
+        - pkg: packages
 
 tlp-sleep:
   service.enabled
-
-#systemd-rfkill:
-#  service.disabled

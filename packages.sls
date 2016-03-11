@@ -1,5 +1,5 @@
 packages:
-  pkg.installed:
+  pkg.latest:
     - pkgs:
       - acpi
       - alsa-utils
@@ -7,6 +7,7 @@ packages:
       - android-udev
       - ansible
       - bind-tools
+      - bitlbee
       - bridge-utils
       - chromium
       - dmenu
@@ -21,7 +22,6 @@ packages:
       - git
       - go
       - htop
-      - i3blocks
       - i3lock
       - i3status
       - i3-wm
@@ -31,11 +31,13 @@ packages:
       - iw
       - lib32-mesa-libgl
       - libva-intel-driver
+      - libvirt
       - mercurial
       - mplayer
       - mpv
       - mtr
       - neovim
+      - networkmanager
       - nmap
       - notify-osd
       - openssh
@@ -43,6 +45,7 @@ packages:
       - powertop
       - qemu
       - redshift
+      - rsync
       - scrot
       - skype
       - strace
@@ -52,6 +55,7 @@ packages:
       - transmission-gtk
       - tcpdump
       - terminus-font-ttf
+      - tlp
       - tmux
       - ttf-bitstream-vera
       - vim
@@ -89,3 +93,51 @@ packages:
       - xorg-xwd
       - xorg-xwininfo
       - xorg-xwud
+
+/home/gms/.vim/autoload/pathogen.vim:
+    file.managed:
+        - source: https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+        - source_hash: md5=a36402926ee8e1e0341b3d52bab75b0d
+        - mode: 640
+        - user: gms
+        - owner: gms
+        - require:
+            - user: gms
+            - file: /home/gms/.vim/autoload
+
+vim-go:
+    git.latest:
+        - name: https://github.com/fatih/vim-go.git
+        - target: /home/gms/.vim/bundle/vim-go
+        - user: gms
+        - require:
+            - user: gms
+            - file: /home/gms/.vim/bundle
+            - pkg: packages
+
+vim-colors-solarized:
+    git.latest:
+        - name: https://github.com/altercation/vim-colors-solarized.git
+        - target: /home/gms/.vim/bundle/vim-colors-solarized
+        - user: gms
+        - require:
+            - user: gms
+            - file: /home/gms/.vim/bundle
+            - pkg: packages
+
+# aur packages:
+# dropbox-cli
+# fetch-git
+# i3blocks
+# jre
+# kbdlight
+# libcurl-compat
+# mutt-sidebar
+# playerctl
+# polysh
+# rxvt-unicode-24bit
+# spotify
+# telegram-desktop-bin
+# terminus-font-ttf
+# ttf-font-awesome
+# ttf-google-fonts-git
