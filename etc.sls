@@ -71,6 +71,13 @@ Europe/Amsterdam:
     - user: root
     - owner: root
 
+/etc/systemd/logind.conf:
+  file.managed:
+    - source: salt://files/etc/systemd/logind.conf
+    - mode: 644
+    - user: root
+    - owner: root
+
 /etc/NetworkManager/NetworkManager.conf:
   file.managed:
     - source: salt://files/etc/NetworkManager/NetworkManager.conf
