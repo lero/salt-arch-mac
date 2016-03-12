@@ -6,6 +6,5 @@ base:
     - bootloader
     - packages
     - services
-    - user.root
-    - user.gms
+    - users
     - etc
