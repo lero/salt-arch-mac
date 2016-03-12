@@ -6,6 +6,7 @@ packages:
       - android-tools
       - android-udev
       - ansible
+      - bash-completion
       - bind-tools
       - bitlbee
       - bridge-utils
