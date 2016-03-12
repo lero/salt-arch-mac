@@ -11,11 +11,13 @@ packages:
       - bitlbee
       - bridge-utils
       - chromium
+      - curl
       - dmenu
       - dmidecode
       - dnsmasq
       - dropbox
       - ebtables
+      - eog
       - ethtool
       - evince
       - figlet
@@ -30,9 +32,11 @@ packages:
       - intel-ucode
       - ipython
       - iw
+      - jq
       - lib32-mesa-libgl
       - libva-intel-driver
       - libvirt
+      - lm_sensors
       - mercurial
       - mplayer
       - mpv
@@ -41,7 +45,9 @@ packages:
       - networkmanager
       - nmap
       - notify-osd
+      - openbsd-netcat
       - openssh
+      - parted
       - pavucontrol
       - powertop
       - qemu
@@ -63,6 +69,7 @@ packages:
       - virt-manager
       - weechat
       - wget
+      - whois
       - wpa_supplicant
       - x11-ssh-askpass 
       - xautolock
