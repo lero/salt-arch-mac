@@ -101,6 +101,7 @@ packages:
       - xorg-xwd
       - xorg-xwininfo
       - xorg-xwud
+      - xsel
 
 /home/gms/.vim/autoload/pathogen.vim:
     file.managed:
