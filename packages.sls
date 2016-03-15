@@ -101,61 +101,58 @@ packages:
       - xorg-xwininfo
       - xorg-xwud
       - xsel
+      - yaourt
+    - require:
+      - file: /etc/pacman.conf
 
+# vim
 /home/gms/.vim/autoload/pathogen.vim:
-    file.managed:
-        - source: https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-        - source_hash: md5=a36402926ee8e1e0341b3d52bab75b0d
-        - mode: 640
-        - user: gms
-        - owner: gms
-        - require:
-            - user: gms
-            - file: /home/gms/.vim/autoload
+  file.managed:
+    - source: https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+    - source_hash: md5=a36402926ee8e1e0341b3d52bab75b0d
+    - user: gms
+    - owner: gms
+    - require:
+      - user: gms
+      - file: /home/gms/.vim/autoload
 
 vim-go:
-    git.latest:
-        - name: https://github.com/fatih/vim-go.git
-        - target: /home/gms/.vim/bundle/vim-go
-        - user: gms
-        - require:
-            - user: gms
-            - file: /home/gms/.vim/bundle
-            - pkg: packages
+  git.latest:
+    - name: https://github.com/fatih/vim-go.git
+    - target: /home/gms/.vim/bundle/vim-go
+    - user: gms
+    - owner: gms
+    - require:
+      - user: gms
+      - file: /home/gms/.vim/bundle
+      - pkg: packages
 
 vim-colors-solarized:
-    git.latest:
-        - name: https://github.com/altercation/vim-colors-solarized.git
-        - target: /home/gms/.vim/bundle/vim-colors-solarized
-        - user: gms
-        - require:
-            - user: gms
-            - file: /home/gms/.vim/bundle
-            - pkg: packages
+  git.latest:
+    - name: https://github.com/altercation/vim-colors-solarized.git
+    - target: /home/gms/.vim/bundle/vim-colors-solarized
+    - user: gms
+    - owner: gms
+    - require:
+      - user: gms
+      - file: /home/gms/.vim/bundle
+      - pkg: packages
 
 salt-vim:
-    git.latest:
-        - name: https://github.com/saltstack/salt-vim.git
-        - target: /home/gms/.vim/bundle/salt-vim
-        - user: gms
-        - require:
-            - user: gms
-            - file: /home/gms/.vim/bundle
-            - pkg: packages
+  git.latest:
+    - name: https://github.com/saltstack/salt-vim.git
+    - target: /home/gms/.vim/bundle/salt-vim
+    - user: gms
+    - owner: gms
+    - require:
+      - user: gms
+      - file: /home/gms/.vim/bundle
+      - pkg: packages
 
-# aur packages:
-# dropbox-cli
-# fetch-git
-# i3blocks
-# jre
-# kbdlight
-# libcurl-compat
-# mutt-sidebar
-# playerctl
-# polysh
-# rxvt-unicode-24bit
-# spotify
-# telegram-desktop-bin
-# terminus-font-ttf
-# ttf-font-awesome
-# ttf-google-fonts-git
+# aur
+{% for p in salt['pillar.get']('aur', []) %}
+{{ p }}:
+  cmd.run:
+    - name: su -c "yaourt -S {{ p }} --noconfirm" gms
+    - unless: pacman -Q {{ p }}
+{% endfor %}

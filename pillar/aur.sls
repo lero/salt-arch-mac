@@ -1,0 +1,15 @@
+aur:
+  - dropbox-cli
+  - i3blocks
+  - jre
+  - kbdlight
+  - mutt-sidebar
+  - neofetch
+  - playerctl
+  - polysh
+  - rxvt-unicode-24bit
+  - spotify
+  - telegram-desktop-bin
+  - terminus-font-ttf
+  - ttf-font-awesome
+  - ttf-google-fonts-git

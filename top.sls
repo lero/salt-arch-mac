@@ -1,4 +1,4 @@
-# TODO: ssh keys, bitlbee config, weechat config and aur packages/keys
+# TODO: ssh keys, bitlbee config, weechat config
 
 base:
   'G@os:Arch and G@productname:MacBookPro12,1':

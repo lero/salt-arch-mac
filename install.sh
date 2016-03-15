@@ -15,4 +15,4 @@ git clone https://github.com/lero/dotfiles.git /srv/dotfiles
 git clone https://github.com/lero/archlinux.git /srv/archlinux
 ln -s /srv/dotfiles /srv/salt/files/home
 ln -s /srv/archlinux/* /srv/salt/files/
-salt-call --local state.highstate
+salt-call --local state.highstate --pillar-root=/srv/salt/pillar
