@@ -61,7 +61,6 @@ packages:
       - system-config-printer
       - transmission-gtk
       - tcpdump
-      - terminus-font-ttf
       - tlp
       - tmux
       - ttf-bitstream-vera
