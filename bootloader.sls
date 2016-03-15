@@ -1,5 +1,3 @@
-# TODO: bootctl install/update
-
 /boot/loader/loader.conf:
   file.managed:
     - source: salt://files/boot/loader/loader.conf
