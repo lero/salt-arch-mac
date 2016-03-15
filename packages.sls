@@ -111,7 +111,7 @@ packages:
     - source: https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
     - source_hash: md5=a36402926ee8e1e0341b3d52bab75b0d
     - user: gms
-    - owner: gms
+    - mode: 0640
     - require:
       - user: gms
       - file: /home/gms/.vim/autoload
@@ -121,7 +121,6 @@ vim-go:
     - name: https://github.com/fatih/vim-go.git
     - target: /home/gms/.vim/bundle/vim-go
     - user: gms
-    - owner: gms
     - require:
       - user: gms
       - file: /home/gms/.vim/bundle
@@ -132,7 +131,6 @@ vim-colors-solarized:
     - name: https://github.com/altercation/vim-colors-solarized.git
     - target: /home/gms/.vim/bundle/vim-colors-solarized
     - user: gms
-    - owner: gms
     - require:
       - user: gms
       - file: /home/gms/.vim/bundle
@@ -143,7 +141,6 @@ salt-vim:
     - name: https://github.com/saltstack/salt-vim.git
     - target: /home/gms/.vim/bundle/salt-vim
     - user: gms
-    - owner: gms
     - require:
       - user: gms
       - file: /home/gms/.vim/bundle
