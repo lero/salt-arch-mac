@@ -1,7 +1,7 @@
 /var/swap:
   cmd.run:
     - name: |
-        [ -f /var/swap ] || dd if=/dev/zero of=/var/swap bs=1M count=2048
+        [ -f /var/swap ] || fallocate -l 4G /var/swap
         chmod 0600 /var/swap
         mkswap /var/swap
         swapon /var/swap
