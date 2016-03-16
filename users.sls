@@ -7,7 +7,7 @@
 {% else %}
     - source: salt://files/home/{{ f }}
 {% endif %}
-    - mode: 644
+    - mode: 600
     - user: root
     - owner: root
 {% endfor %}
