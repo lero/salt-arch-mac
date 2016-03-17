@@ -11,6 +11,8 @@ packages:
       - bitlbee
       - bridge-utils
       - chromium
+      - cups
+      - cups-pdf
       - curl
       - dmenu
       - dmidecode
@@ -22,8 +24,10 @@ packages:
       - evince
       - figlet
       - firefox
+      - ghostscript
       - git
       - go
+      - gsfonts
       - htop
       - i3lock
       - i3status

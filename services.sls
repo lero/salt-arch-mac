@@ -26,5 +26,11 @@ tlp:
     - require:
       - pkg: packages
 
+org.cups.cupsd.service:
+  service.running:
+    - enable: True
+    - require:
+      - pkg: packages
+
 tlp-sleep:
   service.enabled
