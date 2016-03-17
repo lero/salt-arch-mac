@@ -45,6 +45,7 @@ packages:
       - mplayer
       - mpv
       - mtr
+      - ntfs-3g
       - neovim
       - networkmanager
       - nmap
