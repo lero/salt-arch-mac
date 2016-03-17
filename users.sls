@@ -38,25 +38,26 @@ gms:
     {% endif %}
     - makedirs: True
     - require:
-        - user: gms
+      - user: gms
 {% endfor %}
 
 # files
 {% for f in salt['pillar.get']('gms_files', []) %}
 /home/gms/{{ f }}:
-  {% if f == '.config/i3/scripts' %}
-  file.recurse:
-  {% else %}
   file.managed:
-  {% endif %}
     - source: salt://files/home/{{ f }}
-  {% if f == '.config/i3/scripts' %}
-    - file_mode: 750
-  {% else %}
     - mode: 640
-  {% endif %}
     - user: gms
     - owner: gms
     - require:
-        - user: gms
+      - user: gms
 {% endfor %}
+
+/home/gms/.config/i3/scripts:
+  file.recurse:
+    - source: salt://files/home/.config/i3/scripts
+    - file_mode: 750
+    - user: gms
+    - owner: gms
+    - require:
+      - user: gms
