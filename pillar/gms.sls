@@ -13,7 +13,6 @@ gms_dirs:
 gms_files:
   - .bash_profile
   - .bashrc
-  - .config/i3/scripts
   - .config/mpv/mpv.conf
   - .gitconfig
   - .i3blocks.conf
