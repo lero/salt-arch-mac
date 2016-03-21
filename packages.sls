@@ -151,6 +151,15 @@ salt-vim:
       - file: /home/gms/.vim/bundle
       - pkg: packages
 
+bin:
+  git.latest:
+    - name: https://github.com/lero/shell.git
+    - target: /home/gms/bin
+    - user: gms
+    - require:
+      - user: gms
+      - pkg: packages
+
 # aur
 {% for p in salt['pillar.get']('aur', []) %}
 {{ p }}:

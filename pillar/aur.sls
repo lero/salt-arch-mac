@@ -8,7 +8,7 @@ aur:
   - playerctl
   - polysh
   - rxvt-unicode-24bit
-  - spotify
+  - spotify-beta
   - telegram-desktop-bin
   - terminus-font-ttf
   - ttf-font-awesome
