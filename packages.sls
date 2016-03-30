@@ -18,6 +18,7 @@ packages:
       - dmidecode
       - dnsmasq
       - dropbox
+      - dunst
       - ebtables
       - eog
       - ethtool

@@ -1,5 +1,6 @@
 gms_dirs:
   - .config/mpv
+  - .config/dunst
   - .ssh
   - .mplayer
   - .vim/autoload
