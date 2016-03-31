@@ -10,6 +10,7 @@ aur:
   - rxvt-unicode-24bit
   - spotify-beta
   - telegram-desktop-bin
+  - tcptraceroute
   - terminus-font-ttf
   - ttf-font-awesome
   - ttf-google-fonts-git
