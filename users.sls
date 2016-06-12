@@ -1,3 +1,4 @@
+# root
 root:
   user.present:
     - password: $1$tCoTurOR$ege9S9W/KT30VuROSgMb4/
@@ -16,6 +17,10 @@ root:
     - owner: root
 {% endfor %}
 
+/root/.vim:
+  file.symlink:
+    - target: /home/gms/.vim
+
 # my user and files
 gms:
   user.present:
@@ -28,7 +33,7 @@ gms:
       - adbusers
     - password: $1$kQsu71P0$AJNwxmOvN3HUMN8n6mExS.
     - require:
-        - pkg: packages
+      - pkg: packages
 
 # dirs
 {% for f in salt['pillar.get']('gms_dirs', []) %}
@@ -36,7 +41,7 @@ gms:
   file.directory:
     - user: gms
     - owner: gms
-    {% if f == '.ssh' %}
+    {% if f == '.ssh' or f == '.ssh/control' %}
     - mode: 700
     {% else %}
     - mode: 750
@@ -66,3 +71,31 @@ gms:
     - owner: gms
     - require:
       - user: gms
+
+# links
+{% for f in salt['pillar.get']('gms_links', []) %}
+/home/gms/github/{{ f }}:
+  file.symlink:
+    - target: /srv/{{ f }}
+    - require:
+      - user: gms
+{% endfor %}
+
+/home/gms/.ssh/config:
+  file.symlink:
+    - target: /home/gms/Dropbox/ssh/config
+    - require:
+      - user: gms
+
+# permission
+{% for f in salt['pillar.get']('gms_links', []) %}
+/srv/{{ f }}:
+  file.directory:
+    - user: gms
+    - group: gms
+    - recurse:
+      - user
+      - group
+    - require:
+      - user: gms
+{% endfor %}

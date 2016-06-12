@@ -1,12 +1,15 @@
 gms_dirs:
-  - .config/mpv
   - .config/dunst
+  - .config/gtk-3.0
+  - .config/mpv
   - .ssh
+  - .ssh/control
   - .mplayer
   - .vim/autoload
   - .vim/bundle
   - devel/go
   - documents
+  - github
   - downloads
   - pictures
   - temp
@@ -22,3 +25,8 @@ gms_files:
   - .toprc
   - .vimrc
   - .xinitrc
+
+gms_links:
+  - archlinux
+  - dotfiles
+  - salt
