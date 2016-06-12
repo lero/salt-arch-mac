@@ -26,6 +26,7 @@ packages:
       - dropbox
       - dunst
       - ebtables
+      - efibootmgr
       - eog
       - ethtool
       - evince
@@ -55,6 +56,7 @@ packages:
       - libva-intel-driver
       - libvirt
       - lm_sensors
+      - lsscsi
       - make
       - mercurial
       - mplayer
