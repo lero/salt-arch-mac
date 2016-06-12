@@ -10,7 +10,7 @@ Steps:
 2. Create a new partition on your Mac using **Disk Utility**
 3. Boot Arch Linux installation from USB
 4. Connect to your wifi using `wifi-menu` and run `install.sh`:
-    # wget https://raw.githubusercontent.com/xxxxx/salt-arch-mac/master/install.sh
-    # chmod +x install.sh
-    # ./install.sh
+    - wget https://raw.githubusercontent.com/xxxxx/salt-arch-mac/master/install.sh
+    - chmod +x install.sh
+    - ./install.sh
 5. Profit
