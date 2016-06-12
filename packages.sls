@@ -39,6 +39,7 @@ packages:
       - gc
       - gcc
       - ghostscript
+      - gimp
       - git
       - go
       - gsfonts
