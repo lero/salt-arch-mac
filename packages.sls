@@ -75,6 +75,7 @@ packages:
       - openbsd-netcat
       - openssh
       - openvpn
+      - p7zip
       - parted
       - pavucontrol
       - pkg-config
@@ -96,6 +97,7 @@ packages:
       - tlp
       - tmux
       - ttf-bitstream-vera
+      - unzip
       - vim
       - virt-manager
       - weechat
