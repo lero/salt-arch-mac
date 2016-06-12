@@ -92,6 +92,7 @@ packages:
       - system-config-printer
       - transmission-gtk
       - tcpdump
+      - thunar
       - tlp
       - tmux
       - ttf-bitstream-vera
