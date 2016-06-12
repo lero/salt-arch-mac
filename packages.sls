@@ -51,6 +51,7 @@ packages:
       - imagemagick
       - intel-ucode
       - iotop
+      - ipcalc
       - ipython
       - iw
       - jq
