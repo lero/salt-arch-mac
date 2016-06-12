@@ -59,7 +59,7 @@ salt-call --local state.highstate --pillar-root=/srv/salt/pillar
 echo nix > /etc/hostname
 locale-gen
 mkinitcpio -p linux
-bootctl --path=/boot install
+bootctl install
 
 # setup initial user config for WM and stuff
 /home/gms/bin/sreset
