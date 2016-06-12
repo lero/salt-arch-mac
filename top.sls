@@ -1,5 +1,4 @@
 # TODO
-# - bootctl install/update
 # - ssh keys
 # - bitlbee config
 # - weechat config
