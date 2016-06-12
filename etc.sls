@@ -1,5 +1,6 @@
-Europe/Amsterdam:
-  timezone.system
+/etc/localtime:
+  file.symlink:
+    - target: /usr/share/zoneinfo/Europe/Amsterdam
 
 /etc/pacman.conf:
   file.managed:
