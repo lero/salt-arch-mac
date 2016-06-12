@@ -3,12 +3,12 @@ aur:
   - i3blocks
   - jre
   - kbdlight
-  - mutt-sidebar
   - neofetch
+  - neomutt
   - playerctl
   - polysh
   - rxvt-unicode-24bit
-  - spotify-beta
+  - spotify
   - telegram-desktop-bin
   - tcptraceroute
   - terminus-font-ttf

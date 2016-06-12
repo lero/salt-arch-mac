@@ -7,14 +7,18 @@ packages:
       - android-udev
       - ansible
       - aspell-en
+      - automake
       - bash-completion
       - bind-tools
+      - binutils
+      - bison
       - bitlbee
       - bridge-utils
       - chromium
       - cups
       - cups-pdf
       - curl
+      - dialog
       - dmenu
       - dmidecode
       - dnsmasq
@@ -24,12 +28,17 @@ packages:
       - eog
       - ethtool
       - evince
+      - fakeroot
       - figlet
       - firefox
+      - flex
+      - gc
+      - gcc
       - ghostscript
       - git
       - go
       - gsfonts
+      - guile
       - htop
       - i3lock
       - i3status
@@ -40,9 +49,11 @@ packages:
       - iw
       - jq
       - lib32-mesa-libgl
+      - libmpc
       - libva-intel-driver
       - libvirt
       - lm_sensors
+      - make
       - mercurial
       - mplayer
       - mpv
@@ -56,7 +67,9 @@ packages:
       - openssh
       - parted
       - pavucontrol
+      - pkg-config
       - powertop
+      - pulseaudio
       - qemu
       - redshift
       - rsync
@@ -82,6 +95,7 @@ packages:
       - xf86-input-libinput
       - xf86-video-intel
       - xorg-bdftopcf
+      - xorg-xinit
       - xorg-luit
       - xorg-mkfontdir
       - xorg-mkfontscale

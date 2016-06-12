@@ -1,3 +1,7 @@
+root:
+  user.present:
+    - password: $1$tCoTurOR$ege9S9W/KT30VuROSgMb4/
+
 # root files
 {% for f in salt['pillar.get']('root', []) %}
 /root/{{ f }}:
@@ -22,6 +26,7 @@ gms:
       - wheel
       - libvirt
       - adbusers
+    - password: $1$kQsu71P0$AJNwxmOvN3HUMN8n6mExS.
     - require:
         - pkg: packages
 
