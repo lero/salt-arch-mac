@@ -22,12 +22,14 @@ packages:
       - dmenu
       - dmidecode
       - dnsmasq
+      - dosfstools
       - dropbox
       - dunst
       - ebtables
       - eog
       - ethtool
       - evince
+      - exfat-utils
       - fakeroot
       - figlet
       - firefox
@@ -68,6 +70,7 @@ packages:
       - parted
       - pavucontrol
       - pkg-config
+      - pkgfile
       - powertop
       - pulseaudio
       - qemu
