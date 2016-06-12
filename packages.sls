@@ -60,6 +60,7 @@ packages:
       - mplayer
       - mpv
       - mtr
+      - nftables
       - ntfs-3g
       - neovim
       - networkmanager
