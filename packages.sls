@@ -24,6 +24,7 @@ packages:
       - dnsmasq
       - dosfstools
       - dropbox
+      - dstat
       - dunst
       - ebtables
       - efibootmgr
@@ -48,6 +49,7 @@ packages:
       - i3-wm
       - imagemagick
       - intel-ucode
+      - iotop
       - ipython
       - iw
       - jq
@@ -63,6 +65,7 @@ packages:
       - mpv
       - mtr
       - nftables
+      - nload
       - ntfs-3g
       - neovim
       - networkmanager
