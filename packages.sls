@@ -67,6 +67,7 @@ packages:
       - notify-osd
       - openbsd-netcat
       - openssh
+      - openvpn
       - parted
       - pavucontrol
       - pkg-config
