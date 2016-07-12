@@ -71,6 +71,7 @@ packages:
       - ntfs-3g
       - neovim
       - networkmanager
+      - networkmanager-openvpn
       - nmap
       - notify-osd
       - openbsd-netcat
