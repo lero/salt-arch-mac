@@ -1,7 +1,7 @@
 aur:
   - dropbox-cli
   - i3blocks
-  - jre
+  - jre-devel
   - kbdlight
   - neofetch
   - neomutt
