@@ -1,5 +1,5 @@
 packages:
-  pkg.latest:
+  pkg.installed:
     - pkgs:
       - acpi
       - alsa-utils
@@ -88,7 +88,6 @@ packages:
       - redshift
       - rsync
       - scrot
-      - skype
       - strace
       - sudo
       - sysstat
@@ -157,6 +156,7 @@ vim-go:
   git.latest:
     - name: https://github.com/fatih/vim-go.git
     - target: /home/gms/.vim/bundle/vim-go
+    - force_reset: True
     - user: gms
     - require:
       - user: gms
