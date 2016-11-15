@@ -49,6 +49,9 @@ mkdir -p /var/log/salt /srv/salt/files
 ln -s /srv/dotfiles /srv/salt/files/home
 ln -s /srv/archlinux/* /srv/salt/files/
 
+# install bootloader before running salt
+bootctl install
+
 # salt _will_ fail in some items (we can't start some defined services here
 # because we are in a chroot and systemd knows that) but hopefully it will
 # do all needed stuff to boot
@@ -58,7 +61,6 @@ salt-call --local state.highstate --pillar-root=/srv/salt/pillar
 echo nix > /etc/hostname
 locale-gen
 mkinitcpio -p linux
-bootctl install
 
 # setup initial user config for WM and stuff
 /home/gms/bin/sreset
