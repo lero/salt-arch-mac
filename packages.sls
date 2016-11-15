@@ -108,6 +108,8 @@ packages:
       - xautolock
       - xf86-input-libinput
       - xf86-video-intel
+      - xfce4
+      - xfce4-goodies
       - xorg-bdftopcf
       - xorg-xinit
       - xorg-luit

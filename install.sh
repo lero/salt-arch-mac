@@ -26,7 +26,7 @@ mount ${disk}-part1 /mnt/boot
 
 # set pacman mirror and enable testing/community-testing
 # right in the beginning becase hell yeah
-echo "Server = http://ftp.nluug.nl/os/Linux/distr/archlinux/$repo/os/$arch" > /etc/pacman.d/mirrolist
+echo "Server = http://ftp.nluug.nl/os/Linux/distr/archlinux/$repo/os/$arch" > /etc/pacman.d/mirrorlist
 sed -i -e '72, 73 s/^#*//' -e '81, 82 s/^#*//' /etc/pacman.conf
 
 # install the base system

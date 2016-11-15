@@ -53,7 +53,7 @@
 
 /etc/pacman.d/mirrorlist:
   file.managed:
-    - source: salt://files/etc/pacman.d/mirrolist
+    - source: salt://files/etc/pacman.d/mirrorlist
     - mode: 644
     - user: root
     - owner: root
