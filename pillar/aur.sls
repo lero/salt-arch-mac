@@ -4,7 +4,6 @@ aur:
   - jre-devel
   - kbdlight
   - neofetch
-  - neomutt
   - playerctl
   - polysh
   - rxvt-unicode-24bit

@@ -3,8 +3,6 @@ packages:
     - pkgs:
       - acpi
       - alsa-utils
-      - android-tools
-      - android-udev
       - ansible
       - aspell-en
       - automake

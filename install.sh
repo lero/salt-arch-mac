@@ -13,9 +13,7 @@ fi
 echo -e "t\n4\n20\nw" | fdisk $disk
 
 # encrypt entire partition
-echo "-> Encrypting partition, enter a password"
 cryptsetup -y luksFormat ${disk}-part4
-echo "-> Opening encrypted partition, enter the password"
 cryptsetup open ${disk}-part4 cryptroot
 
 # create file system and mount
@@ -23,6 +21,7 @@ mkfs.ext4 /dev/mapper/cryptroot
 mount /dev/mapper/cryptroot /mnt
 
 # mount OS X EFI partition on /boot so we don't need to create one
+mkdir /mnt/boot
 mount ${disk}-part1 /mnt/boot
 
 # set pacman mirror and enable testing/community-testing
@@ -37,10 +36,10 @@ genfstab -U -p /mnt >> /mnt/etc/fstab
 # now inside the final system
 cat << EOF | arch-chroot /mnt
 # enable yaourt and install salt
-echo -e '[archlinuxfr]\nSigLevel = Never\nServer = http://repo.archlinux.fr/$arch' >> /etc/pacman.conf
+echo -e '[archlinuxfr]\nSigLevel = Never\nServer = http://repo.archlinux.fr/\$arch' >> /etc/pacman.conf
 pacman -Sy
 pacman -S yaourt --noconfirm
-yaourt -S salt-raet git --noconfirm
+yaourt -S salt git --noconfirm
 
 # clone needed repos and create some dirs/links
 git clone https://github.com/lero/salt-arch-mac.git /srv/salt
