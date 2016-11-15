@@ -6,7 +6,6 @@ aur:
   - neofetch
   - playerctl
   - polysh
-  - rxvt-unicode-24bit
   - spotify
   - telegram-desktop-bin
   - tcptraceroute

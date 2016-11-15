@@ -30,7 +30,6 @@ gms:
     - groups:
       - wheel
       - libvirt
-      - adbusers
     - password: $1$kQsu71P0$AJNwxmOvN3HUMN8n6mExS.
     - require:
       - pkg: packages

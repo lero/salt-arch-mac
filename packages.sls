@@ -85,6 +85,7 @@ packages:
       - qemu
       - redshift
       - rsync
+      - rxvt-unicode
       - scrot
       - strace
       - sudo
