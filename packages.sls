@@ -51,10 +51,10 @@ packages:
       - intel-ucode
       - iotop
       - ipcalc
+      - ipmitool
       - ipython
       - iw
       - jq
-      - lib32-mesa-libgl
       - libmpc
       - libva-intel-driver
       - libvirt
@@ -78,6 +78,7 @@ packages:
       - openvpn
       - p7zip
       - parted
+      - patch
       - pavucontrol
       - pkg-config
       - pkgfile

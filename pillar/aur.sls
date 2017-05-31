@@ -11,4 +11,3 @@ aur:
   - tcptraceroute
   - terminus-font-ttf
   - ttf-font-awesome
-  - ttf-google-fonts-git
