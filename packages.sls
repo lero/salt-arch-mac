@@ -157,7 +157,7 @@ packages:
 /home/gms/.vim/autoload/pathogen.vim:
   file.managed:
     - source: https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-    - source_hash: md5=a36402926ee8e1e0341b3d52bab75b0d
+    - source_hash: md5=bddb1212bab8ea19d37e9b9e69496c2d
     - user: gms
     - mode: 0640
     - require:
