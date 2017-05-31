@@ -109,19 +109,24 @@ packages:
       - xf86-input-libinput
       - xf86-video-intel
       - xorg-bdftopcf
+      - xorg-iceauth
       - xorg-luit
       - xorg-mkfontdir
       - xorg-mkfontscale
       - xorg-server
-      - xorg-server-utils
+      - xorg-sessreg
       - xorg-setxkbmap
       - xorg-smproxy
       - xorg-x11perf
       - xorg-xauth
+      - xorg-xbacklight
+      - xorg-xcmsdb
       - xorg-xcursorgen
       - xorg-xdpyinfo
       - xorg-xdriinfo
       - xorg-xev
+      - xorg-xgamma
+      - xorg-xhost
       - xorg-xinit
       - xorg-xkbcomp
       - xorg-xkbevd
@@ -129,10 +134,17 @@ packages:
       - xorg-xkill
       - xorg-xlsatoms
       - xorg-xlsclients
+      - xorg-xmodmap
       - xorg-xpr
       - xorg-xprop
+      - xorg-xrandr
+      - xorg-xrdb
       - xorg-xvinfo
+      - xorg-xrefresh
+      - xorg-xset
+      - xorg-xsetroot
       - xorg-xwd
+      - xorg-xvinfo
       - xorg-xwininfo
       - xorg-xwud
       - xsel
